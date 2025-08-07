@@ -50,3 +50,12 @@ To see all the relevant information of the simulation, run the `sim_info` method
 ```python
 sim.sim_info()
 ```
+## Customizing the simulation.
+
+The file `solver1d.c` is modular and can be adapted to run different simulations of a system of 4 conservation laws. Here are the main places to edit the code for a different simulation.  
+- **Parameters:** At the beginning of the file there are several parameters that can be changed, `N` (number of cells), `T` (final time), etc...
+- **Initial conditions:** Initial conditions are defined in the `initialize` function.
+- **Boundary conditions:** How the stencil behaves at the boundary is defined in the `BC` function. 
+- **Flux:** For different conservation laws the flux  
+- **Size of system:** This is written for a system with 4-depenednet variables. For systems with additional variables a new variable will need to be defined and added throughout the entire code. 
+
