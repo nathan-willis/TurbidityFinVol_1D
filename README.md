@@ -56,6 +56,6 @@ The file `solver1d.c` is modular and can be adapted to run different simulations
 - **Parameters:** At the beginning of the file there are several parameters that can be changed, `N` (number of cells), `T` (final time), etc...
 - **Initial conditions:** Initial conditions are defined in the `initialize` function.
 - **Boundary conditions:** How the stencil behaves at the boundary is defined in the `BC` function. 
-- **Flux:** For different conservation laws the flux  
+- **Flux:** For different conservation laws the flux will need to be updated in `flux`. Additionally, the characeristic wavespeeds (eigenvalues of the flux Jacobian) will need to be updated in `F_HLL`.
 - **Size of system:** This is written for a system with 4-depenednet variables. For systems with additional variables a new variable will need to be defined and added throughout the entire code. 
 
