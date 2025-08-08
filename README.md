@@ -14,7 +14,7 @@ After compiling, run the executable as follows:
 ./sim.out 1.0 1.0 0.02
 ```
 
-The code is for scientific research and intended to run different test cases with varying initial height, initial concentration, and settling speeds. Therefore, the exectuable takes three arguments `h2init`, `c2init`, `U_s`, respectively. To lower the initial height and concentration of the current on the right to 0.7 and 0.9 and reduce the settling speed to 0.01, run the executable as follows: 
+The code is for scientific research and intended to run different test cases with varying initial height, initial concentration, and settling speeds. Therefore, the executable takes three arguments `h2init`, `c2init`, `U_s`, respectively. To lower the initial height and concentration of the current on the right to 0.7 and 0.9 and reduce the settling speed to 0.01, run the executable as follows: 
 ```bash
 ./sim.out 0.7 0.9 0.01
 ```
